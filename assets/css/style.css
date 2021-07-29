@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --color1: #fce138;
+    --color2: #024e76;
+    --color3: #39a6b2;
+  }
+
+
+  /* MEDIA QUERIES */
+
+  @media screen  and (max-width: 1024px) {
+    body {
+        background-color: var(--color1);
+    }
+
+  }
+
+  @media screen  and (max-width: 768px) {
+    body {
+        background-color: var(--color2);
+    }
+  }
+
+  @media screen  and (max-width: 600px) {
+    body{
+        background-color: var(--color3);
+    }
+  }
+
+  @media screen  and (max-width: 480px) {
+    body {
+        background-color: violet;
+    }
+  }
