@@ -12,38 +12,54 @@
 
   body {
     font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
   }
 
   /* HEADER STYLES */
+
   header {
+    display: block;
+    padding-bottom: 90px;
     text-align: center;
-    display: inline;
   }
 
   header div {
+    float: right;
     text-align: right;
     display: inline;
   }
 
   header div a {
-      float: right;
-      display: inline-block;
+    display: inline;
+  }
+
+  header div a:hover {
+    font-weight: bold;
+    text-shadow: rgb(37, 37, 37);
   }
 
   header nav ul {
+    float: left;
     text-align: left;
     display: inline;
   }
 
+  header nav ul li:hover {
+    font-weight: bold;
+    text-shadow: rgb(37, 37, 37);
+  }
+
   /* PROJECTS STYLES */
   .projects {
-      text-align: center;
+    display: block;
+    text-align: center;
   }
 
   .projects h2 {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      text-decoration: underline;
+    background-color: var(--color3);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
   }
 
   .projects img {
@@ -54,8 +70,8 @@
   }
 
   .projects img:hover {
-      opacity: 0.75;
-      border-radius: 10px;
+    opacity: 0.75;
+    border-radius: 10px;
   }
 
    #run-buddy img {
@@ -68,11 +84,11 @@
   }
 
    #run-buddy img:hover {
-       opacity: 0.75;
-       border-radius: 10px;
+    opacity: 0.75;
+    border-radius: 10px;
    }
 
-  #placeholder-project1, #placeholder-project2, #horiseon {
+   #placeholder-project1, #placeholder-project2, #horiseon {
     padding: 10px;
     display: inline-block;
   }
@@ -81,26 +97,33 @@
   /* MEDIA QUERIES */
 
   @media screen  and (max-width: 1024px) {
-    body {
-        background-color: var(--color1);
+    #run-buddy img {
+        max-width: 1024px;
+        max-height: 512px;
     }
 
   }
 
   @media screen  and (max-width: 768px) {
-    body {
-        background-color: var(--color2);
+    #run-buddy img {
+        max-width: 768px;
+        max-height: 384px;
     }
+
   }
 
   @media screen  and (max-width: 600px) {
-    body{
-        background-color: var(--color3);
+    #run-buddy img {
+        max-width: 600px;
+        max-height: 300px;
     }
+
   }
 
   @media screen  and (max-width: 480px) {
-    body {
-        background-color: violet;
+    #run-buddy img {
+        max-width: 450px;
+        max-height: 225px;
     }
+
   }
