@@ -80,10 +80,22 @@
     text-align: center;
     border: 3px solid var(--color1);
     border-radius: 5px;
-    /*margin-right: 110px;*/
+  }
+
+  #text-me-today img {
+    max-width: 1250px;
+    max-height: 625px;
+    text-align: center;
+    border: 3px solid var(--color1);
+    border-radius: 5px;
   }
 
    #run-buddy img:hover {
+    opacity: 0.75;
+    border-radius: 10px;
+   }
+
+   #text-me-today img:hover {
     opacity: 0.75;
     border-radius: 10px;
    }
